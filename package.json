@@ -1,0 +1,19 @@
+{
+  "name": "project_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "projet n°3  openclassrooms ",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dokkalfars/ohmyfood.git"
+  },
+  "author": "Timothée Pluchart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dokkalfars/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Dokkalfars/ohmyfood#readme"
+}

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood!</title>
-    <link rel="stylesheet" href="./sass/main.scss">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./Fontawesome/css/all.min.css">
 </head>
 <body>
-    <header>
-        <img src="./images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood!">
+    <header class="header">
+        <img src="./images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood!" class="header__logo">
       </header>
 
      <main>
@@ -25,7 +25,7 @@
          </section>
 
          <section>
-             <div>
+             <div class="container">
                  <h2>Fonctionnement</h2>
                  <ol>
                      <li>
@@ -45,7 +45,7 @@
          </section>
 
          <section>
-             <div>
+             <div class="container">
                  <h2>Restaurants</h2>
 
                  <div>
@@ -111,21 +111,21 @@
          </section>
         </main> 
 
-     <footer>
-        <div>
-            <img src="./images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood Footer">
-            <ul>
-                <li>
-                    <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+     <footer class="footer">
+        <div class="container">
+            <span class="footer__logo">ohmyfood</span>
+            <ul class="footer__list">
+                <li class="footer__listElem">
+                    <a href="#" class="footer__link"><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</a>
                 </li>
-                <li>
-                    <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+                <li class="footer__listElem">
+                    <a href="#" class="footer__link"><i class="fas fa-hands-helping footer__icon"></i>Devenir partenaire</a>
                 </li>
-                <li>
-                    <a href="#">Mention légales</a>
+                <li class="footer__listElem">
+                    <a href="#" class="footer__link">Mention légales</a>
                 </li>
-                <li>
-                    <a href="mailto:contact@ohmyfood.com">Contact</a>
+                <li class="footer__listElem">
+                    <a href="mailto:contact@ohmyfood.com" class="footer__link">Contact</a>
                 </li>
             </ul>
         </div>
