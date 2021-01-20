@@ -1,0 +1,81 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+@mixin button {
+    border: 0rem;
+    padding: 1rem 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: $color-primary;
+    box-shadow: 0.25rem 0.25rem 10px #9c9c9c;
+}
+
+
+
+body, html {
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    padding: 1rem 1rem;
+    box-shadow: 0rem 0rem 0.5rem #979797;
+    position: relative;
+    z-index: 1000;
+
+    &__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+  }
+
+.footer {
+    background-color: #353535;
+
+    &__logo {
+        font-family: "Shrikhand";
+        color: #ffffff;
+        margin: 0rem 0rem 1rem 0rem;
+        font-size: 1.5rem;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    &__link {
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    } 
+    
+    &__icon {
+        width: 1.2rem;
+        margin-right: 0.5rem;
+    }
+
+    &__listElem {
+        margin-top: 0.5rem;
+    }
+}
