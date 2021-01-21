@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     padding: 0rem 1rem;
-    background-color: #F3F3F3;
+    background-color:#EAEAEA;
     font-size: 1.2rem;
     position: relative;
     align-items: center;
@@ -19,7 +19,7 @@
 .intro {
     padding: 2rem;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #f6f6f6;
 
     &__title {
         margin: 0rem;
@@ -33,6 +33,7 @@
 
     &__button {
         @include button;
+        background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
     }
 }
 
@@ -69,6 +70,14 @@
             margin: 0rem 0rem 0rem 2rem;
         }
 
+        &:last-child {
+            background-color: #F5EDFF;
+
+            .working__icon {
+                color: $color-primary;
+            }
+          }
+
         &::before {
             counter-increment: counterStep 1;
             content: counter(counterStep) " ";
@@ -87,11 +96,14 @@
 
     &__icon {
         margin-right: 1rem;
+        margin-left: 1rem;
         color: #7f7f7f;
+
     }
 
     &__text {
         font-size: 0.9rem;
+        font-weight: bold;
     }
 }
 
@@ -159,17 +171,37 @@
         }
 
         &__button {
-            height: 2rem;
-            width: 2rem;
-            background-color: transparent;
-            border: transparent 0px solid;
-            padding: 0rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include buttonlike;
+            position: relative;
+            background-color: black;
+
+            &:hover {
+                .restaurant__like {
+                 &--noBg {
+                    opacity: 0;
+                    }
+             }
+            }
+
+            &::before {
+                opacity: 0;
+                transition: 0.5s;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+            }
+
+            &:hover::before {
+                opacity: 1;
+            }
         }
 
         &__like {
+            @include like;
             background-color: #ffffff;
         }
     }
