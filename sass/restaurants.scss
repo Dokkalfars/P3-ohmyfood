@@ -121,6 +121,10 @@
     overflow: hidden;
     cursor: pointer;
     max-width: 100%;
+    animation: animDish 0.5s;
+    animation-timing-function: cubic-bezier(0,0,1,1) ;
+    animation-fill-mode: both;
+    transform: scale(0);
 
     &__header {
         @include textover;
@@ -163,17 +167,17 @@
         align-items:center;
         justify-content:center;
         border-radius: 100px;
-        transform: rotate(0deg);
-        transition-duration: 1s;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
     }
 
     &:hover {
         .dish__valided {
-            margin-right: -1rem;
+           margin-right: -1rem;
         }
 
-        .dish_boxIcon {
-            transform: rotate(10deg);
+        .dish__boxIcon {
+            transform: rotate(0deg);
         }
     }
 
@@ -181,6 +185,12 @@
         color: $color-tertiary;
     }
 }
+
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{$i/10}s;
+    }
+  }
 
 .boxButton {
     display: flex;
