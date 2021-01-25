@@ -13,6 +13,23 @@
     opacity: 1;
   }
 }
+<<<<<<< HEAD
+=======
+@keyframes animLoader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes animItem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+>>>>>>> Correctif
 body, html {
   margin: 0;
   font-family: "roboto", sans-serif;
@@ -71,6 +88,44 @@ a {
   margin-top: 0.5rem;
 }
 
+<<<<<<< HEAD
+=======
+.loader {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, 0.9);
+  align-items: center;
+  justify-content: center;
+  animation: animLoader 0.01s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+.loader__items {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #9356DC;
+  border-radius: 50%;
+  animation: animItem 1.2s cubic-bezier(0.5, 0, 0.5, 1) 1;
+  border-color: #9356DC transparent transparent transparent;
+}
+.loader__items:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.loader__items:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.loader__items:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+>>>>>>> Correctif
 .search {
   display: flex;
   justify-content: center;
@@ -109,6 +164,11 @@ a {
   color: #ffffff;
   background-color: #9356DC;
   box-shadow: 0.25rem 0.25rem 10px #9c9c9c;
+<<<<<<< HEAD
+=======
+}
+.intro__button:hover {
+>>>>>>> Correctif
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 
@@ -138,6 +198,10 @@ a {
   display: flex;
   position: relative;
   align-items: center;
+<<<<<<< HEAD
+=======
+  transition: background-color 0.3s;
+>>>>>>> Correctif
 }
 @media screen and (min-width: 1024px) {
   .working__stage {
@@ -145,10 +209,17 @@ a {
     margin: 0rem 0rem 0rem 2rem;
   }
 }
+<<<<<<< HEAD
 .working__stage:last-child {
   background-color: #F5EDFF;
 }
 .working__stage:last-child .working__icon {
+=======
+.working__stage:hover {
+  background-color: #F5EDFF;
+}
+.working__stage:hover .working__icon {
+>>>>>>> Correctif
   color: #9356DC;
 }
 .working__stage::before {
@@ -252,8 +323,11 @@ a {
   transition: 0.5s;
   content: "";
   position: absolute;
+<<<<<<< HEAD
   top: 0;
   left: 0;
+=======
+>>>>>>> Correctif
   height: 100%;
   width: 100%;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
@@ -265,8 +339,11 @@ a {
   transition-duration: 0.25s;
   background-color: #f7f7f7;
   position: absolute;
+<<<<<<< HEAD
   top: 0rem;
   left: 0rem;
+=======
+>>>>>>> Correctif
   height: 100%;
   width: 100%;
   display: flex;
@@ -333,8 +410,11 @@ a {
   transition: 0.5s;
   content: "";
   position: absolute;
+<<<<<<< HEAD
   top: 0;
   left: 0;
+=======
+>>>>>>> Correctif
   height: 100%;
   width: 100%;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
@@ -346,8 +426,11 @@ a {
   transition-duration: 0.25s;
   background-color: #f7f7f7;
   position: absolute;
+<<<<<<< HEAD
   top: 0rem;
   left: 0rem;
+=======
+>>>>>>> Correctif
   height: 100%;
   width: 100%;
   display: flex;
@@ -509,6 +592,11 @@ a {
   color: #ffffff;
   background-color: #9356DC;
   box-shadow: 0.25rem 0.25rem 10px #9c9c9c;
+<<<<<<< HEAD
+=======
+}
+.commandButton:hover {
+>>>>>>> Correctif
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 

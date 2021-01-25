@@ -33,7 +33,10 @@
 
     &__button {
         @include button;
+
+        &:hover {
         background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+        }
     }
 }
 
@@ -64,13 +67,14 @@
         display: flex;
         position: relative;
         align-items: center;
+        transition: background-color 0.3s;
 
         @media screen and (min-width:1024px) {
             flex: 1;
             margin: 0rem 0rem 0rem 2rem;
         }
 
-        &:last-child {
+        &:hover {
             background-color: #F5EDFF;
 
             .working__icon {
@@ -188,8 +192,6 @@
                 transition: 0.5s;
                 content: "";
                 position: absolute;
-                top: 0;
-                left: 0;
                 height: 100%;
                 width: 100%;
                 background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
